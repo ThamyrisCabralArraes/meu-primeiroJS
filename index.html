@@ -9,10 +9,23 @@
 </head> 
 <body>
   <h1>Curso de Javascript</h1>
-    <script> 
-      var nome = prompt('Digite o seu nome:')
-      var idade = prompt('Digite sua idade:')
-      document.write('<h1>Olá ' + nome + ', tudo bem? Estou vendo aqui que você tem ' + idade + ' anos.</h1>')
+  <div id="divi"></div>
+    <script>
+      var a = 10
+      var b = 20
+      var c = null
+      document.write('A: ' + a + '<br>' )
+      document.write('B: ' + b + '<br>' )
+      document.write('C: ' + c + '<br>' )
+      
+      document.write('<hr>')
+      c = a
+      a = b 
+      b = c
+      c = null
+      document.write('A: ' + a + '<br>' )
+      document.write('B: ' + b + '<br>' )
+      document.write('C: ' + c + '<br>' )
     </script>
 </body>
 </html>
